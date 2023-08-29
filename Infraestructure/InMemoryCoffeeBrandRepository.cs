@@ -15,7 +15,7 @@ namespace CoffeeBrand.Infrastructure.Repositories
         private void InitializeData()
         {
             // Simulando dados em memória
-            CoffeeBrandModel starbucks = new CoffeeBrandModel
+            CoffeeBrandModel starbucks = new()
             {
                 Id = 1,
                 Name = "Starbucks",
@@ -24,7 +24,7 @@ namespace CoffeeBrand.Infrastructure.Repositories
                 Description = "Starbucks is one of the largest coffeehouse chains in the world, known for its wide range of coffee beverages and global presence."
             };
 
-            CoffeeBrandModel lavazza = new CoffeeBrandModel
+            CoffeeBrandModel lavazza = new()
             {
                 Id = 2,
                 Name = "Lavazza",
@@ -33,7 +33,7 @@ namespace CoffeeBrand.Infrastructure.Repositories
                 Description = "Lavazza is an Italian coffee brand, one of the most popular in the country, offering a variety of coffee blends and products."
             };
 
-            CoffeeBrandModel peetsCoffee = new CoffeeBrandModel
+            CoffeeBrandModel peetsCoffee = new()
             {
                 Id = 3,
                 Name = "Peet's Coffee",
