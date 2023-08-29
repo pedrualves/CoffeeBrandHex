@@ -1,14 +1,13 @@
 using Domain.Service;
 using Domain.Entities;
-using CoffeeBrand.Infrastructure.Repositories;
 
 namespace CoffeeBrand.Application
 {
     public class CoffeeBrandService : ICoffeeBrandService
     {
-        private readonly InMemoryCoffeeBrandRepository _repository;
+        private readonly ICoffeeBrandRepository _repository;
 
-        public CoffeeBrandService(InMemoryCoffeeBrandRepository repository) =>
+        public CoffeeBrandService(ICoffeeBrandRepository repository) =>
             _repository = repository;
 
         public IEnumerable<CoffeeBrandModel> GetCoffeeBrands()
